@@ -41,7 +41,7 @@
 }
 
 .carrito:hover {
-    color: #47488b;
+    color: #126b2b;
 }
 
 .etiqueta-precio {
@@ -52,7 +52,7 @@
     padding: 3px 12px;
 }
 .etiqueta-precio:hover{
-    color: #47488b;
+    color: #126b2b;
 }
 
 .barra-busqueda {
@@ -95,6 +95,116 @@
     font-size: 0.9rem;
 }
 
+.paqueteArticulos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tarjeta-libro {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #126b2b;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease;
+    width: 320px;
+    flex: 0 0 320px;
+}
+
+.imagen-libro {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 14px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    min-width: 0;
+}
+
+.encabezado-tarjeta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.titulo {
+    margin: 0;
+    color: #05230f;
+    font-family: Georgia;
+    font-size: 1.5rem;
+    overflow-wrap: anywhere;
+    font-weight: bold;
+}
+
+.precioLibro {
+    color: #05230f;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.descripcion {
+    margin: 12px 0;
+    color: #3a3833;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.categoria {
+    display: inline-block;
+    margin-top:auto;
+    padding: 5px 11px;
+    color: #FFFFFF;
+    background-color: #7e6611;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.boton-detalle {
+    display: inline-block;
+    margin-top: auto;
+    padding: 9px 15px;
+    color: #ffffff;
+    background-color: #126b2b;
+    border: 1px solid #0b431b;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.boton-detalle:hover {
+    color: #ffffff;
+    background-color: #0b431b;
+}
+
+.pieTarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+}
 
 @media (max-width: 600px) {
     .barra-busqueda .container-fluid {
