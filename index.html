@@ -33,7 +33,7 @@
     </div>
         <nav class="container-fluid d-flex justify-content-between align-items-center">
             <div class="navbar-brand mb-0 h1">
-                <span class="navbar-brand mb-0 h1">Rincón del Libro</span>
+                <span class="navbar-brand mb-0 h1">RINCÓN DEL LIBRO</span>
             </div>
 
             <div class="d-flex align-items-center gap-3">
@@ -43,29 +43,33 @@
     </div>
 
      <!--Segundo Navbar donde van las funciones de busqueda.-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <span class="texto-categoria">Productos de la categoría: Todas</span>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Acción</a></li>
-                            <li><a class="dropdown-item" href="#">Fantasia</a></li>
-                            <li><a class="dropdown-item" href="#">Terror</a></li>
-                            <li><a class="dropdown-item" href="#">Historia</a></li>
-                            <li><a class="dropdown-item" href="#">Novelas</a></li>
-                            <li><a class="dropdown-item" href="#">Academico</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Todas las categorías</a></li>
-                        </ul>
-                    </li>
+    <nav class="navbar navbar-expand-lg barra-busqueda">
+    <div class="container-fluid">
+
+        <span class="texto-categoria">Productos de la categoría: Todas</span>
+
+        <div class="controles-busqueda">
+
+            <div class="dropdown">
+                <button class="btn boton-categoria dropdown-toggle" type="button" id="indexCategorias" data-bs-toggle="dropdown"aria-expanded="false">
+                    Categorías
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="menuCategorias">
+                    <li><button class="dropdown-item" type="button">Acción</button></li>
+                    <li><button class="dropdown-item" type="button">Fantasía</button></li>
+                    <li><button class="dropdown-item" type="button">Terror</button></li>
+                    <li><button class="dropdown-item" type="button">Historia</button></li>
+                    <li><button class="dropdown-item" type="button">Novelas</button></li>
+                    <li><button class="dropdown-item" type="button">Académico</button></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><button class="dropdown-item" type="button">Todas las categorías</button></li>
                 </ul>
+            </div>
+
+            <input class="form-control campo-busqueda" type="search" placeholder="Buscar libro">
+
             </div>
         </div>
     </nav>

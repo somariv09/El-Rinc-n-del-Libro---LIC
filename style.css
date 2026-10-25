@@ -25,7 +25,7 @@
 .navbar .navbar-brand {
     color: #000000;
     font-family: Georgia;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-right: 0;
 }
@@ -53,4 +53,62 @@
 }
 .etiqueta-precio:hover{
     color: #47488b;
+}
+
+.barra-busqueda {
+    background-color: #faf8f5;
+    padding: 15px 25px;
+    border-bottom: 3px solid #126b2b;
+}
+
+.texto-categoria {
+    color: #000000;
+    font-family: Georgia;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.controles-busqueda {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.boton-categoria {
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid #126b2b;
+    font-family: Georgia;
+}
+
+.boton-categoria:hover,
+.boton-categoria:focus {
+    color: #ffffff;
+    background-color: #126b2b;
+    border-color: #0d5020;
+}
+
+.campo-busqueda {
+    width: 260px;
+    border: 1px solid #c9c0b2;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 600px) {
+    .barra-busqueda .container-fluid {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .controles-busqueda {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .campo-busqueda {
+        flex: 1;
+        min-width: 180px;
+    }
 }
