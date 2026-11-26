@@ -38,10 +38,17 @@
     display: inline-flex;
     align-items: center;
     gap: 2px;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .carrito:hover {
-    color: #126b2b;
+    color: #B76E79;
 }
 
 .etiqueta-precio {
@@ -52,13 +59,13 @@
     padding: 3px 12px;
 }
 .etiqueta-precio:hover{
-    color: #126b2b;
+    color: #B76E79;
 }
 
 .barra-busqueda {
     background-color: #faf8f5;
     padding: 15px 25px;
-    border-bottom: 3px solid #126b2b;
+    border-bottom: 3px solid #B76E79;
 }
 
 .texto-categoria {
@@ -77,15 +84,15 @@
 .boton-categoria {
     color: #000000;
     background-color: transparent;
-    border: 2px solid #126b2b;
+    border: 2px solid #B76E79;
     font-family: Georgia;
 }
 
 .boton-categoria:hover,
 .boton-categoria:focus {
     color: #ffffff;
-    background-color: #126b2b;
-    border-color: #0d5020;
+    background-color: #B76E79;
+    border-color: #ad5b68;
 }
 
 .campo-busqueda {
@@ -107,7 +114,7 @@
     box-sizing: border-box;
 }
 
-.tarjeta-libro {
+.tarjeta-producto {
     
     display: flex;
     flex-direction: column;
@@ -115,7 +122,7 @@
     padding: 16px;
     margin-top: 20px;
     background-color: #ffffff;
-    border: 2px solid #126b2b;
+    border: 2px solid #B76E79;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.2s ease;
@@ -123,7 +130,7 @@
     flex: 0 0 320px;
 }
 
-.imagen-libro {
+.imagen-producto {
     width: 100%;
     height: 200px;
     object-fit: contain;
@@ -150,17 +157,27 @@
 
 .titulo {
     margin: 0;
-    color: #05230f;
+    color: #6a343c;
     font-family: Georgia;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     overflow-wrap: anywhere;
     font-weight: bold;
+    text-align: left;
 }
 
-.precioLibro {
-    color: #05230f;
+.precioProducto {
+    color: #d64d61;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.rating {
+    color: #6a343c;
     font-size: 1.3rem;
     font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
 }
 
 .descripcion {
@@ -168,6 +185,7 @@
     color: #3a3833;
     font-size: 0.95rem;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .categoria {
@@ -175,7 +193,7 @@
     margin-top:auto;
     padding: 5px 11px;
     color: #FFFFFF;
-    background-color: #7e6611;
+    background-color: #e2b926;
     border-radius: 20px;
     font-size: 0.8rem;
 }
@@ -185,8 +203,8 @@
     margin-top: auto;
     padding: 9px 15px;
     color: #ffffff;
-    background-color: #126b2b;
-    border: 1px solid #0b431b;
+    background-color: #B76E79;
+    border: 1px solid #6a343c;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
@@ -195,7 +213,7 @@
 
 .boton-detalle:hover {
     color: #ffffff;
-    background-color: #0b431b;
+    background-color: #6a343c;
 }
 
 .pieTarjeta {
@@ -204,6 +222,12 @@
     align-items: center;
     gap: 10px;
     margin-top: auto;
+}
+
+.alert-success {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 @media (max-width: 600px) {
